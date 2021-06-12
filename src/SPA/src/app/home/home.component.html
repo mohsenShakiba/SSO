@@ -1,0 +1,7 @@
+<div>
+  <span *ngIf="isFetching">Fetching data from server</span>
+  <div *ngIf="!isFetching">
+    <span *ngIf="isAuthenticated">User is authenticated</span>
+    <span *ngIf="!isAuthenticated">User is NOT authenticated</span>
+  </div>
+</div>

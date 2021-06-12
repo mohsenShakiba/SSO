@@ -1,0 +1,27 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>title</title>
+</head>
+<body>
+<form action="/Account/Login" method="post">
+    <input type="hidden" asp-for="ReturnUrl"/>
+
+    <div class="form-group form-input-icon username-icon">
+        <label asp-for="Username"></label>
+        <input class="form-control" placeholder="Username" name="Username" autofocus>
+    </div>
+    <div class="form-group form-input-icon password-icon">
+        <label asp-for="Password"></label>
+        <input type="password" class="form-control" placeholder="Password" name="Password" autocomplete="off">
+    </div>
+
+    <div class="btn-container">
+        <button class="btn btn-primary" name="button" value="login">ورود</button>
+        <button class="btn btn-outline-default" name="button" value="cancel" style="margin-left: 0">بازگشت</button>
+    </div>
+</form>
+</body>
+</html>
